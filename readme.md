@@ -13,13 +13,15 @@ This project focuses on implementing and analyzing new algorithms for the **All 
 ```
 📂 APASP-Project
 │-- 📄 README.md  # Project description, setup, and instructions
-│-- 📂 research   # Paper PDFs, notes, and literature review
+│-- 📂 research_materials   # Paper PDFs, notes, and literature review
 │-- 📂 code       # Source code for implementations
 │-- 📂 reports    # Reports and documentation
-│   │-- checkpoint1/ # Contains LaTeX source & PDF for Checkpoint 1
+│-- 📂 checkpoint1
+│   │-- 📄 Project_Proposal_ADA.pdf  # Project proposal document
+│   │-- 📄 main.tex  # Related notes or text file
 │-- 📂 docs       # Additional project documentation
 │-- .gitignore    # Specifies files to exclude from version control
-```
+
 
 ## Implementation Plan
 We will implement and test the new APASP algorithms, comparing them against baseline shortest path algorithms to evaluate performance in different graph settings (dense and sparse graphs).
@@ -54,7 +56,7 @@ We will implement and test the new APASP algorithms, comparing them against base
 ## Contribution Guidelines
 - Follow best coding practices and keep commits descriptive.
 - Maintain a clean repository (no unnecessary files like backup, autosave, metadata).
-- Create feature branches for major changes before merging to `main`.
+- Create feature branches for major changes before merging to `master`.
 
 ## References
 - Roditty, L. (2023). *New Algorithms for All Pairs Approximate Shortest Paths*. STOC 2023.
