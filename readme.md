@@ -19,7 +19,7 @@ This project focuses on implementing and analyzing new algorithms for the **All 
 │-- 📂 checkpoint1
 │   │-- 📄 Project_Proposal_ADA.pdf  # Project proposal document
 │   │-- 📄 main.tex  # Related notes or text file
-│-- 📂 docs       # Additional project documentation
+│-- 📂 documentation     # Additional project documentation
 │-- .gitignore    # Specifies files to exclude from version control
 
 
