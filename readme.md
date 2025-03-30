@@ -11,16 +11,15 @@ This project focuses on implementing and analyzing new algorithms for the **All 
 
 ## Repository Structure
 ```
-📂 APASP-Project
-│-- 📄 README.md  # Project description, setup, and instructions
-│-- 📂 research_materials   # Paper PDFs, notes, and literature review
-│-- 📂 code       # Source code for implementations
-│-- 📂 reports    # Reports and documentation
-│-- 📂 checkpoint1
-│   │-- 📄 Project_Proposal_ADA.pdf  # Project proposal document
-│   │-- 📄 main.tex  # Related notes or text file
-│-- 📂 documentation     # Additional project documentation
-│-- .gitignore    # Specifies files to exclude from version control
+📂 ADA_Project
+│-- 📂 checkpoint1            # Contains project proposal and notes
+│   │-- 📄 Project_Proposal_ADA.pdf
+│   │-- 📄 main.tex
+│-- 📂 code                   # Source code for implementations
+│-- 📂 documentation          # Additional project documentation
+│-- 📂 report                 # Reports and writeups
+│-- 📂 research_materials     # Paper PDFs, notes, and literature review
+│-- 📄 readme.md              # Project description, setup, and instructions
 
 
 ## Implementation Plan
