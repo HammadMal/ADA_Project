@@ -1,0 +1,221 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{titling}
+
+% Page layout
+\geometry{a4paper, margin=1in}
+
+% Header and footer configuration
+\pagestyle{headandfoot}
+\runningheadrule
+\runningfootrule
+\runningheader{DH 101: Sub-Project 01}{Spring 2025}{Page \thepage\ of \numpages}
+\runningfooter{}{Deadline: February 1, 2025}{}
+
+% Document begins
+\begin{document}
+
+\title{DH 101: Sub-Project 01}
+\author{Arsal Jangda, Hammad Malik}
+\date{Spring 2025}
+
+\maketitle
+
+
+\section*{Questions}
+
+\begin{questions}
+
+\question[5] \textbf{[Drucker p. 27]} What kind of data model would you produce to study different musical tastes among your peers? What categories would be essential? Useful? How would you characterize tastes or preferences?
+
+% \vspace{3cm} % Space for the answer
+
+A great way to study musical tastes among peers is by using a relational database model that organizes key entities like Users, Genres, Artists, Songs, and Preferences. 
+
+The Users table stores unique user IDs along with limited demographic details, such as age range or general location. Meanwhile, the Genres, Artists, and Songs tables help structure the musical content, linking each song to its respective artist and genre through the foreign keys.
+
+The Preferences tableplays a crucial role by tracking user interactions with songs—whether through play counts, ratings, or "like/dislike" feedback. This structured approach makes it easy to analyze trends, such as which genres or artists are most popular, while also allowing researchers to explore connections between demographic factors and musical preferences.
+
+Ethical considerations are very important in this process. It is important to limit personal information, and store data securely—whether on encrypted local drives or trusted cloud platforms to prevent unauthorized access. Regular backups, clear documentation and using proper permission protocols to make sure that the data is both reliable and handled responsibly, aligning with best practices emphasized by Drucker.
+
+\question[5] \textbf{[Drucker p. 32]} What kinds of data can a scholar working with Rare Book auction catalogs use to produce their research project? What materials will they need, and how will they structure data from them? Create a scenario in which this occurs.
+
+
+So basically a researcher wants to study rare book auction catalogs to understand how book prices change over time and how ownership history affects their value. They use auction listings from \href{https://www.rarebookhub.com/catalogues/}{Rare Book Hub} to collect important details like book titles, authors, publishers, editions, and auction prices.
+
+\section*{Materials Needed}
+\begin{itemize}
+    \item Rare book auction catalogs (digital or physical copies)
+    \item Information about book owners, past sales, and annotations
+    \item OCR software to scan and convert text into digital format
+    \item A database to organize and store the collected data
+    \item Tools like Python or Excel for analyzing trends
+    \item Visualization softwares to present findings
+\end{itemize}
+
+\section*{Data Organization}
+\begin{enumerate}
+    \item \textbf{Extract Information:} List book details (title, author, year, condition, price).
+    \item \textbf{Track Provenance:} Document past owners and any special annotations.
+    \item \textbf{Analyze Price Trends:} Compare book prices over time.
+    \item \textbf{Compare with Other Sources:} Check if the same books appear in libraries or other sales records.
+\end{enumerate}
+
+
+an example scenario could be that a researcher collects information on \textbf{first-edition novels} ( first edition is the first commercially distributed book ) and records their prices over the last 50 years. Using data tools, they find that books from famous authors have increased in value significantly. The results are presented in easy-to-understand charts and reports.
+
+
+\vspace{4cm}
+
+\question[5] \textbf{[Drucker p. 50]} Do a Google search for images of da Vinci’s Mona Lisa and specify size. Compare the images. Why are they so different in color? In detail? Even in cropping? What does this tell you about making digital files from analog materials?
+
+ The pictures look different in color, detail, and cropping. These differences happen because turning a real painting into a digital image is not always exact. The colors can change because the original painting gets older,the varnish on it turns yellow over time. Some digital versions try to fix or adjust these changes, which is why the colors may not look the same in every image.  
+
+Furthermore, I think the details in the images can also be different because some pictures are taken with better cameras or scanners than others. The way the image is saved and edited also affects how clear it looks. Cropping, or cutting the image, happens because people take pictures of the painting from different angles or focus on certain parts of it.  
+
+These differences show that making digital copies of real paintings is not always simple. 
+
+\question[10] \textbf{[Dublin Core Fields]} Create a taxonomy and/or classification system for an area in which you have a high level of knowledge. What terms, references, or resources would you want to cross-reference repeatedly? Which should be in a pick list for consistency? Is Dublin Core sufficient?
+
+I will present a structured taxonomy for football, detailing key classifications, references, and metadata organization.
+
+\section*{Key Classification Categories}
+\begin{itemize}
+    \item \textbf{Player Information:} Name, Position, Nationality, Age, Club, Transfer History
+    \item \textbf{Match Details:} Date, Teams, Competition, Venue, Score, Highlights
+    \item \textbf{Statistics:} Goals, Assists, Pass Accuracy, Tackles, Saves, Possession
+    \item \textbf{Tactical Analysis:} Formations, Playing Style, Pressing Metrics, Heat Maps
+    \item \textbf{Historical Records:} Top Scorers, Club Histories, Legendary Players
+\end{itemize}
+
+\section*{References and Resources}
+\begin{itemize}
+    \item FIFA and UEFA Databases
+    \item Club Websites and Match Reports
+    \item Player Performance Metrics (Opta, StatsBomb, Whoscored)
+    \item Video Footage and Tactical Breakdowns
+\end{itemize}
+
+\section*{Pick List for Consistency}
+To ensure uniformity in data entry and retrieval, a predefined list of terms should be used:
+\begin{itemize}
+    \item \textbf{Positions:} Goalkeeper, Defender, Midfielder, Forward
+    \item \textbf{Competitions:} Premier League, La Liga, Champions League, World Cup
+    \item \textbf{Match Events:} Goal, Assist, Yellow Card, Red Card, Substitution
+    \item \textbf{Tactical Approaches:} High Press, Counter-Attack, Possession-Based, Direct Play
+\end{itemize}
+
+Now coming back to Dublin Core, Dublin Core provides standard metadata fields such as Title, Creator, Subject, and Description, which can be applied to football data. However, it lacks specialized fields for detailed sports analytics. Additional metadata elements may be required for performance statistics, tactical breakdowns, and in-depth match analyses.
+
+
+\vspace{6cm}
+
+\question[10] \textbf{The Walt Whitman Archive} Explore \url{https://whitmanarchive.org/} and answer the following: 
+\begin{itemize}
+    \item What makes the extensive search possible?
+    \\
+    
+    It is made possible by its use of "XML" to encode texts. They have structured the content with detailed XML tags, which enables users to perform advanced searches, whether they are looking for documents by date, specific poetic structures, or connections to Whitman’s other work
+    \item How does structured data aid scholarly analysis in this case?
+    \\
+
+    
+    Using XML encoding to structure data provides a consistent and detailed representation of texts, making scholarly analysis more effective. This structured format allows researchers to run complex queries, examine different texts, and track the evolution of Whitman’s works over time. For example, scholars can study how "Leaves of Grass" changed across different editions. Through XML encoded text, researchers can compare different versions side by side, tracing specific changes in language, punctuation, and formatting etc.
+    \item Which markup language was used in this project to structure the digital data?
+    \\
+    
+    Ite uses XML to organize its digital data, but it follows TEI (Text Encoding Initiative)  to structure everything properly
+\end{itemize}
+
+\vspace{6cm}
+
+\question[15] \textbf{Digital Archive Creation} Imagine creating an interactive online exhibit for a historical figure. 
+\begin{itemize}
+    \item Define categories and attributes to classify the digital footprint (e.g., time period, media type, themes).
+    \item Apply your classification to at least 10 items.
+    \item Reflect on how your classification system helps or limits a journalist researching the figure’s political activism.
+\end{itemize}
+
+The historical figure that we are choosing is Muhammad Ali Jinnah. The key categories and attributes include:
+
+\begin{itemize}
+    \item \textbf{Time Period:} 1876-1948 (Life and Political Career)
+    \item \textbf{Media Type:} Photographs, letters, speeches, newspaper articles, videos
+    \item \textbf{Themes:} Political activism, creation of Pakistan, leadership, legal career, personal life
+    \item \textbf{Key Events:} Lahore Resolution (1940), Direct Action Day (1946), Independence of Pakistan (1947)
+    \item \textbf{Influences:} Dadabhai Naoroji, Gopal Krishna Gokhale, Allama Iqbal
+    \item \textbf{Opposition:} British Colonial Rule, Indian National Congress, Internal Political Struggles
+\end{itemize}
+
+\section*{Applying the Classification to 10 Items}
+\begin{enumerate}
+    \item {Speech on Lahore Resolution (1940) – \textbf{Time Period:} 1940, \textbf{Media Type:} Audio, \textbf{Theme:} Political Activism, \textbf{Key Event:} Lahore Resolution}
+    \item {Newspaper Article on Jinnah's Role in Independence – \textbf{Time Period:} 1947, \textbf{Media Type:} Print, \textbf{Theme:} Leadership, \textbf{Key Event:} Independence of Pakistan}
+    \item {Photograph with Muslim League Leaders (1947) – \textbf{Time Period:} 1947, \textbf{Media Type:} Image, \textbf{Theme:} Key Events, \textbf{Key Event:} Partition Discussions}
+    \item {Personal Letter to Mahatma Gandhi – \textbf{Time Period:} 1944, \textbf{Media Type:} Text, \textbf{Theme:} Political Discourse, \textbf{Influence:} Mahatma Gandhi}
+    \item {Video Documentary on Jinnah's Life – \textbf{Time Period:} Post-1948, \textbf{Media Type:} Video, \textbf{Theme:} Legacy}
+    \item {Legal Case Argument as a Barrister – \textbf{Time Period:} 1916, \textbf{Media Type:} Text, \textbf{Theme:} Legal Career, \textbf{Influence:} British Legal System}
+    \item {Transcripts from Cabinet Mission Meetings – \textbf{Time Period:} 1946, \textbf{Media Type:} Document, \textbf{Theme:} Political Negotiations, \textbf{Key Event:} Cabinet Mission Plan}
+    \item {Political Cartoon Criticizing Muslim League – \textbf{Time Period:} 1945, \textbf{Media Type:} Image, \textbf{Theme:} Opposition, \textbf{Opposition:} Indian National Congress}
+    \item {List of Books Referenced by Jinnah – \textbf{Time Period:} Various, \textbf{Media Type:} Text, \textbf{Theme:} Influences, \textbf{Influence:} Dadabhai Naoroji, Gopal Krishna Gokhale}
+    \item {Obituary Detailing Jinnah’s Contributions – \textbf{Time Period:} 1948, \textbf{Media Type:} Print, \textbf{Theme:} Legacy, \textbf{Key Event:} Death of Jinnah}
+\end{enumerate}
+
+
+the classification system helps journalists researching Muhammad Ali Jinnah’s political activism by structuring information clearly. They can filter by time period, media type, themes, key events, influences, and opposition to find relevant material.
+
+
+\vspace{10cm}
+
+\question[20] \textbf{Tagging Exercise: Recipe and Poem} Contrast the semantic elements of a recipe and a poem. 
+\begin{enumerate}
+    \item Identify the main elements of both.
+    \item Visit the TEI website and propose tags for encoding a poem.
+    \item Develop descriptive tags for a recipe and encode a biryani recipe using them.
+    \item Reflect on the differences in tag sets and how personal interpretation affects tagging.
+\end{enumerate}
+
+\vspace{12cm}
+
+\question[10] \textbf{Deep Structure and Digital Humanities} Articulate Chomsky’s concept of deep structure and its implications for meaning. How does it provide a lens for evaluating data mining and text mining processes in the digital humanities?
+
+
+The Chomsky deep structure theory deals with deep meaning in sentences. What we say and write, when stripped down, is a root form, simple, of meaning (deep structure), and then use grammar and lexicons to present it (surface structure). "The cat chased the mouse" and "The mouse was chased by the cat" both occur in a form at the surface level, but both have one and the same root meaning: a cat is chasing a mouse. This shows that different sentences can have the same core meaning, even if they are written or spoken in different ways.
+
+In the field of digital humanities, where computers are used to analyze texts and data, Chomsky’s idea of deep structure is very helpful. When we use tools like data mining or text mining, we often look for patterns in words or phrases. However, these tools sometimes focus only on the surface-level details, like specific words or how often they appear. Deep structure reminds us to look deeper and ask: What is the real meaning here? Are we capturing the ideas and relationships behind the words, or just the words themselves? For example, two texts might use completely different words but still talk about the same topic or theme. If we only look at the surface, we might miss these connections.
+
+By using Chomsky’s concept of deep structure, researchers in digital humanities can improve how they analyze texts. It encourages them to create tools that understand not just the words, but also the meaning and context behind them. This is especially important for tasks like finding themes in literature, understanding emotions in social media posts, or translating languages. In short, deep structure helps us see beyond the surface and focus on what really matters: the meaning.
+
+\vspace{6cm}
+
+\question[10] \textbf{Chomsky on Recursion} Investigate Chomsky’s notion of recursion and its implications for creativity in human language. Reflect on how this affects the storage and presentation of philosophical, literary, and artistic work in digital humanities.
+
+\vspace{6cm}
+
+\question[10] \textbf{Chomsky on Corpora} Explore Chomsky’s position on corpora and its implications for corpus-focused work in digital humanities, like the Kitab project. How does his view challenge or defend such work?
+
+
+Noam Chomsky believes that language is not just about the words people use or how often they use them. Instead, he argues that what really matters is the underlying rules that allow people to form sentences—even ones they’ve never heard before. Because of this, he sees corpora (collections of real-world language data) as not very useful for understanding how language truly works. He once said, "the corpus doesn’t generate the grammar, the grammar generates the corpus" (Harris, 2019, pp. 57–59). This means that language isn’t built from patterns found in texts; rather, the human mind already has the ability to create and understand language, even without relying on past examples.
+
+Chomsky’s position challenges corpus-focused work in \textbf{digital humanities}, like the \textit{Kitab project}, which uses large collections of texts to study patterns, themes, and historical changes in language. For example, the Kitab project analyzes Arabic texts to understand how ideas and writing styles have evolved over time. Chomsky might argue that while such projects can tell us about how language is used in practice, they don’t explain why language works the way it does. He would say that counting words or finding patterns in texts doesn’t reveal the deeper rules of grammar that are hardwired into our brains.
+
+However, Chomsky’s view doesn’t completely dismiss the value of corpora. While he believes that corpora alone can’t explain the nature of language, he might agree that they are useful for studying how language is used in real-life situations. For example, corpus-focused work can help us understand cultural trends, historical changes, or how people communicate in different contexts. Projects like Kitab can provide valuable insights into these areas, even if they don’t explain the underlying rules of grammar.
+
+Chomsky believes that studying large collections of texts (corpora) doesn’t fully explain how language works in our minds. He thinks language is more about the hidden rules in our brain that let us create and understand sentences, not just about how words are used in real life. This challenges projects like Kitab, which focus on analyzing patterns in texts.
+
+However, Chomsky’s view doesn’t mean such projects are useless. They can still help us understand how people use language in real-world situations, like tracking changes in writing styles or cultural trends. So, for projects like Kitab, the key is to balance studying surface-level patterns with thinking about the deeper rules that make language possible.
+
+
+
+
+
+\vspace{6cm}
+
+
+
+\end{questions}
+
+\end{document}
