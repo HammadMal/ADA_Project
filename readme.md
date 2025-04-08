@@ -96,7 +96,7 @@ We will test  our implementations on various graph types:
   - Transportation networks
   - Web graphs
 
-Our benchmarks measure both runtime efficiency and approximation quality across different graph sizes and densities.
+Our benchmarks will measure both runtime efficiency and approximation quality across different graph sizes and densities.
 
 ## Findings & Insights (Preliminary)
 - The new algorithms show promising results for dense graphs, with significant speedups compared to traditional APSP approaches
