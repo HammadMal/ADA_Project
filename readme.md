@@ -36,6 +36,74 @@ We will implement and test the new APASP algorithms, comparing them against base
    - Running tests on synthetic and real-world graph datasets
    - Evaluating efficiency and approximation accuracy
 
+
+
+### Core Concepts from the Paper:
+- **Multiplicative 2-approximation:** Ensures the estimated distance between any two vertices is at most twice the true shortest path.
+- **Algorithmic Improvements:** The paper introduces two new algorithms:
+  - **Faster algorithm** for computing multiplicative 2-approximations with time complexity Õ(min{n1/2m, n9/4}).
+  - **Distance-sensitive algorithm** for vertex pairs with distances ≥ 4, achieving Õ(min{n7/4m1/4, n11/5}) expected time.
+
+
+   These improvements provide better efficiency compared to previous methods, such as those based on Fast Matrix Multiplication (FMM).
+
+
+### Current Understanding
+1. **Problem Context:**
+   - The APASP problem seeks to efficiently compute approximate shortest paths between all pairs of vertices in a graph.
+   - While exact All Pairs Shortest Paths (APSP) has O(n³) time complexity, approximate solutions can be significantly faster.
+
+2. **Key Algorithm Components:**
+   - **Vertex Hierarchies:** Strategic partitioning of vertices into sets V₁, V₂, etc. based on degree thresholds
+   - **Edge Hierarchies:** Classification of edges based on their endpoints' inclusion in vertex sets
+   - **Blocking Vertices:** Identifying vertices that must be included in certain shortest paths
+   - **Case Analysis:** Different handling based on path structures (C1, C2, C3)
+
+3. **The Two Main Algorithms:**
+   - **Multiplicative 2-Approximation:** Õ(min{n¹/²m, n⁹/⁴}) time complexity
+   - **Distance-Sensitive Algorithm:** Õ(min{n⁷/⁴m¹/⁴, n¹¹/⁵}) expected time for distances ≥ 4
+
+### Implementation Progress
+- [x] Basic graph data structures
+- [x] Baseline algorithms (Floyd-Warshall, Dijkstra's)
+- [x] Core vertex and edge classification functions
+- [ ] Case analysis implementation (C1, C2, C3)
+- [ ] Post-processing for multiplicative approximation
+- [ ] Distance-sensitive optimizations
+- [ ] Comprehensive testing framework
+
+## Technical Challenges & Solutions
+We've identified several key challenges which we can face during implementation:
+
+1. **Memory Management:** The O(n²) space requirement is demanding for large graphs. We're implementing sparse matrix representations to address this.
+
+2. **Sampling Accuracy:** The probabilistic vertex sampling requires careful tuning. We're working on calibration methods to ensure consistent results.
+
+3. **Algorithm Correctness:** The complex case analysis requires rigorous testing. We've designed a test suite with edge cases to verify correctness.
+
+4. **Performance Optimization:** We're implementing parallel processing for the multiple Dijkstra runs to improve performance.
+
+## Experimental Setup
+We will test  our implementations on various graph types:
+
+- **Synthetic Graphs:** 
+  - Random Erdős-Rényi graphs with varying densities
+  - Small-world networks
+  - Scale-free networks
+
+- **Real-world Networks:**
+  - Social network datasets
+  - Transportation networks
+  - Web graphs
+
+Our benchmarks measure both runtime efficiency and approximation quality across different graph sizes and densities.
+
+## Findings & Insights (Preliminary)
+- The new algorithms show promising results for dense graphs, with significant speedups compared to traditional APSP approaches
+- The case analysis approach successfully handles different path structures within the graph
+- For sparse graphs, the multiplicative approximation algorithm approaches the efficiency of BFS-based methods
+
+
 ## Team Members & Responsibilities
 | Name           | Role & Responsibilities |
 |---------------|-------------------------|
