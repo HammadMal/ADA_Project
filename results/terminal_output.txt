@@ -1,0 +1,133 @@
+PS C:\Users\Hammad\Documents\github\ADA_Project> cd code
+PS C:\Users\Hammad\Documents\github\ADA_Project\code> python implementation.py       
+Testing with graph size n = 50
+  Trial 1/3
+    Baseline time: 0.007752 seconds
+    New algorithm time: 0.008236 seconds
+    Max additive error: 1
+    Max multiplicative error: 1.25
+    Avg additive error: 0.0008163265306122449
+    Avg multiplicative error: 1.000204081632653
+  Trial 2/3
+    Baseline time: 0.008229 seconds
+    New algorithm time: 0.000000 seconds
+    Max additive error: 194
+    Max multiplicative error: 39.8
+    Avg additive error: 43.580258302583026
+    Avg multiplicative error: 8.20935175423181
+  Trial 3/3
+    Baseline time: 0.011704 seconds
+    New algorithm time: 0.005186 seconds
+    Max additive error: 3
+    Max multiplicative error: 1.75
+    Avg additive error: 0.005714285714285714
+    Avg multiplicative error: 1.0014285714285713
+  Average baseline time: 0.009229 seconds
+  Average new algorithm time: 0.004474 seconds
+  Average max additive error: 66.0
+  Average max multiplicative error: 14.266666666666666
+Testing with graph size n = 75
+  Trial 1/3
+    Baseline time: 0.024920 seconds
+    New algorithm time: 0.007252 seconds
+    Max additive error: 0
+    Max multiplicative error: 1.0
+    Avg additive error: 0.0
+    Avg multiplicative error: 1.0
+  Trial 2/3
+    Baseline time: 0.024148 seconds
+    New algorithm time: 0.000000 seconds
+    Max additive error: 294
+    Max multiplicative error: 59.8
+    Avg additive error: 71.77724358974359
+    Avg multiplicative error: 12.882998034951173
+  Trial 3/3
+    Baseline time: 0.024179 seconds
+    New algorithm time: 0.008256 seconds
+    Max additive error: 3
+    Max multiplicative error: 1.75
+    Avg additive error: 0.001081081081081081
+    Avg multiplicative error: 1.0002702702702704
+  Average baseline time: 0.024416 seconds
+  Average new algorithm time: 0.005170 seconds
+  Average max additive error: 99.0
+  Average max multiplicative error: 20.849999999999998
+Testing with graph size n = 100
+  Trial 1/3
+    Baseline time: 0.057194 seconds
+    New algorithm time: 0.008616 seconds
+    Max additive error: 0
+    Max multiplicative error: 1.0
+    Avg additive error: 0.0
+    Avg multiplicative error: 1.0
+  Trial 2/3
+    Baseline time: 0.047341 seconds
+    New algorithm time: 0.008102 seconds
+    Max additive error: 394
+    Max multiplicative error: 79.8
+    Avg additive error: 96.96525096525096
+    Avg multiplicative error: 17.045591299582913
+  Trial 3/3
+    Baseline time: 0.056468 seconds
+    New algorithm time: 0.008398 seconds
+    Max additive error: 0
+    Max multiplicative error: 1.0
+    Avg additive error: 0.0
+    Avg multiplicative error: 1.0
+  Average baseline time: 0.053668 seconds
+  Average new algorithm time: 0.008372 seconds
+  Average max additive error: 131.33333333333334
+  Average max multiplicative error: 27.266666666666666
+Testing with graph size n = 150
+  Trial 1/3
+    Baseline time: 0.164682 seconds
+    New algorithm time: 0.032872 seconds
+    Max additive error: 0
+    Max multiplicative error: 1.0
+    Avg additive error: 0.0
+    Avg multiplicative error: 1.0
+  Trial 2/3
+    Baseline time: 0.181619 seconds
+    New algorithm time: 0.016613 seconds
+    Max additive error: 594
+    Max multiplicative error: 119.8
+    Avg additive error: 145.91263318112632
+    Avg multiplicative error: 25.191380292011985
+  Trial 3/3
+    Baseline time: 0.171327 seconds
+    New algorithm time: 0.032472 seconds
+    Max additive error: 0
+    Max multiplicative error: 1.0
+    Avg additive error: 0.0
+    Avg multiplicative error: 1.0
+  Average baseline time: 0.172542 seconds
+  Average new algorithm time: 0.027319 seconds
+  Average max additive error: 198.0
+  Average max multiplicative error: 40.6
+Testing with graph size n = 200
+  Trial 1/3
+    Baseline time: 0.383088 seconds
+    New algorithm time: 0.056150 seconds
+    Max additive error: 0
+    Max multiplicative error: 1.0
+    Avg additive error: 0.0
+    Avg multiplicative error: 1.0
+  Trial 2/3
+    Baseline time: 0.403150 seconds
+    New algorithm time: 0.042123 seconds
+    Max additive error: 794
+    Max multiplicative error: 159.8
+    Avg additive error: 196.16737142857144
+    Avg multiplicative error: 33.51979528344769
+  Trial 3/3
+    Baseline time: 0.377177 seconds
+    New algorithm time: 0.049141 seconds
+    Max additive error: 0
+    Max multiplicative error: 1.0
+    Avg additive error: 0.0
+    Avg multiplicative error: 1.0
+  Average baseline time: 0.387805 seconds
+  Average new algorithm time: 0.049138 seconds
+  Average max additive error: 264.6666666666667
+  Average max multiplicative error: 53.93333333333334
+Comparison completed. Results saved to algorithm_comparison.png
