@@ -12,17 +12,26 @@ This project focuses on implementing and analyzing new algorithms for the **All 
 ## Repository Structure
 ```
 📂 ADA_Project
-│-- 📂 checkpoint1            # Contains project proposal and notes.
-│-- 📂 checkpoint2            # Contains checkpoint2 pdf and tex.
-│-- 📂 checkpoint2            # Contains checkpoint3 pdf and tex.
-│-- 📂 code                   # Source code for implementations
-│   │-- 📄 implementation.py  # Main implementation of algorithms
-│-- 📂 documentation          # Additional project documentation
-│   │-- 📄 readme.md          # Code Documentation
-│-- 📂 research_materials     # Paper PDFs, notes, and literature review
-│-- 📂 Results                # Results such as running times, speedups and comparisions.
+│-- 📂 checkpoint1                 # Contains project proposal and notes.
+│-- 📂 checkpoint2                 # Contains checkpoint2 pdf and tex.
+│-- 📂 checkpoint3                 # Contains checkpoint3 pdf and tex.
+│   │-- 📄 CP3_Progress_Report.pdf # Checkpoint 3 Progress Report. 
+│   │-- 📄 main.tex                # Tex file.
 
-│-- 📄 readme.md              # Project description, setup, and instructions
+│-- 📂 checkpoint4                 # Contains checkpoint4 pdf and tex.
+│   │-- 📄 Final_Report.pdf        # Final Report. 
+│   │-- 📄 main.tex                # Tex file.
+
+│-- 📂 code                        # Source code for implementations
+│   │-- 📄 implementation.py       # Main implementation of algorithms
+
+│-- 📂 documentation               # Additional project documentation
+│   │-- 📄 readme.md               # Code Documentation
+
+│-- 📂 research_materials          # Paper PDFs, notes, and literature review
+│-- 📂 Results                     # Results such as running times, speedups and comparisions.
+
+│-- 📄 readme.md                   # Project description, setup, and instructions
 ```
 
 ## Implementation Plan
@@ -102,7 +111,7 @@ Our benchmarks measure both runtime efficiency and approximation quality across 
 ### Setup Instructions
 1. Clone the repository
 2. Install required packages: `pip install numpy matplotlib`
-3. Run the implementation: `python code/implementation.py`
+3. Run the implementation: `python implementation.py`
 
 ## Future Work
 1. **Strict Approximation Guarantees:** Refine the implementation to ensure the multiplicative-2 bound is never exceeded
